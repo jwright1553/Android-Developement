@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="@color/purple"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_margin="7dp"
+        android:id="@+id/roomselectbox"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true">
+
+
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Select Building"
+            android:id="@+id/buildingSelect"/>
+
+        <Spinner
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buildingSelectSpinner"
+            android:entries="@array/buildings"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Room"
+            android:id="@+id/roomSelect"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/roomSelectEdit"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/beverageSelect"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="145dp"
+        android:layout_below="@id/roomselectbox">
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/bevSelectRadio">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioCoffee"
+                android:text="Coffee"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioDecafCoffee"
+                android:text="Decaf Coffee"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioTea"
+                android:text="Tea"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioSoda"
+                android:text="Soda"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/submitButton"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/beverageSelect">
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Submit Order"
+            android:id="@+id/submitOrder"
+            android:textSize="32sp"
+            android:onClick="submit"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/submitButton">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text=""
+            android:id="@+id/orderShown"/>
+
+     </LinearLayout>
+
+</RelativeLayout>

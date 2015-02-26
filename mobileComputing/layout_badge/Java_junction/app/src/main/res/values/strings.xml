@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Java_junction</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="purple">#BF5FFF</color>
+
+    <string-array name="buildings">
+        <item>Euler</item>
+        <item>Union</item>
+        <item>Library</item>
+    </string-array>
+
+    <string-array name="beverages">
+        <item>Coffee</item>
+        <item>Decaf Coffee</item>
+        <item>Hot Tea</item>
+        <item>Soda</item>
+    </string-array>
+
+</resources>
